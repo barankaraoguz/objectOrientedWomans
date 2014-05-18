@@ -2,7 +2,7 @@ class Woman extends Human{
 
     private int beauty;
     private int intelligence;
-    private int hairColor;
+    private String hairColor;
     private int talking;
     private int happiness;
     private String name;
@@ -83,6 +83,9 @@ class Woman extends Human{
         else return false;
     }
     
+    public void setHappiness(int likedPhotoCount){
+        for(int i=0;i<=photoCount;i++) this.happiness++;
+    }
     
     public void takePicture(){
         while(phoneStorageIsEmpty()) super.shot();
