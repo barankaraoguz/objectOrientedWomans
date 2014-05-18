@@ -60,7 +60,7 @@ class Woman extends Human{
     }
     
     public void getHerName(){
-         if(this.isUseGlasses() || beauty<6){
+         if(this.isUseGlasses() || this.beauty<6){
             return this.name;
          }else{
             if(this.happiness>7){
@@ -84,7 +84,7 @@ class Woman extends Human{
     }
     
     public void setHappiness(int likedPhotoCount){
-        for(int i=0;i<=photoCount;i++) this.happiness++;
+        for(int i=0;i<=likedPhotoCount;i++) this.happiness++;
     }
     
     public void takePicture(){
