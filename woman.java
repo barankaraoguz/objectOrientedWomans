@@ -19,7 +19,7 @@ class Woman extends Human{
         this.weight       = super.getWeight();
         this.name         = super.getName();
         this.age          = super.getAge();
-        if(this.hairColor=='yellow'){
+        if(this.hairColor=="yellow"){
             this.intelligence = this.intelligence/2;
         }
     }
